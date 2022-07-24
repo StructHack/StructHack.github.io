@@ -2,6 +2,8 @@ window.addEventListener('DOMContentLoaded',()=>{
     // Just setting the aside's height
     let nav = document.querySelector('.aside_container');
     nav.style.height = window.innerHeight+'px';
+   nav.style.height = (document.body.clientHeight > window.innerHeight) ? document.body.clientHeight +'px':window.innerHeight+'px';
+
 
     // Onclicking the ctf's link
 
