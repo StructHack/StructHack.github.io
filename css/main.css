@@ -100,16 +100,22 @@ body{
     margin-bottom: 1em;
 }
 
-.content_container div:hover{
+.content_container .ctf:hover{
     cursor: pointer;
     background-color: #555;
 }
 
-.content_container div h2{
+.content_container .ctf h2{
     color: orange;
 }
 
 .content_container div a{
     color: skyblue;
     text-decoration: none;
+}
+
+.writeup h1{
+    color:orange;
+    font-size: 2.5em;
+    margin: 1em 0em;
 }
